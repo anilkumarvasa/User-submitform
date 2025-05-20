@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">
+        <h1> this the first heading</h1>
+        <p> this the paragraph</p>
+    </div>
+    <div id="second">
+        <h1> this is the first heading </h1>
+        <p> this is the second paragraph</p>
+    </div>
+    <script>
+        let x = document.createElement('h2')
+        x.innerText = 'this is the second heading '
+        console.log(x)
+        var father = document.getElementById("second")
+        console.log(father)
+        father.appendChild(x)
+        console.log(father)
+        const mom = document.getElementById("first").textContent 
+         console.log(mom)
+
+        
+    </script>
+</body>
+</html>

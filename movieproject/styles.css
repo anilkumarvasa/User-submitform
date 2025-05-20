@@ -1,0 +1,14 @@
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.product{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

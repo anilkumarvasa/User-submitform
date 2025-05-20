@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f8ff; /* Light background */
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.birthday-image {
+    max-width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flower {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,89 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  padding: 30px;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Form section */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* File input styling */
+input {
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.3;
+}
+
+button:hover {
+  transform: scale(0.3);
+  background-color: aqua;
+}
+
+button[type="submit"],
+button[type="button"] {
+  margin-top: 15px;
+}

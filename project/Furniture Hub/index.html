@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Hub</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .search-bar {
+            width: 150px;
+            padding: 5px;
+        }
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .text-content {
+            text-align: left;
+        }
+        .text-content p:first-child {
+            color: orange;
+            font-weight: bold;
+        }
+        .text-content h1 {
+            margin: 10px 0;
+        }
+        .text-content p:last-child {
+            color: blue;
+        }
+        .shop-button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .shop-button:hover {
+            background-color: darkblue;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="text" class="search-bar" placeholder="Search...">
+        <h2>Furniture Hub</h2>
+        <div class="icons">
+            <span>&#9776;</span>
+            <span>&#128100;</span>
+            <span>&#10084;</span>
+            <span>&#128722;</span>
+        </div>
+    </header>
+    <main>
+        <div class="text-content">
+            <p>Chairs Collection 2025</p>
+            <h1>Welcome to the Furniture Hub</h1>
+            <p>Made to be uniquely yours furniture</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="image-container">
+            <img src="https://www.shutterstock.com/image-vector/vector-realistic-yellow-armchair-3d-260nw-2239751635.jpg" alt="Chair Image">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Furniture Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

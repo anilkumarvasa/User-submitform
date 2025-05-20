@@ -1,0 +1,84 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #8f282c, #369a90);
+    animation: bgAnimation 10s infinite alternate;
+    overflow: hidden;
+  }
+  
+  @keyframes bgAnimation {
+    0% {
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    }
+    50% {
+      background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+    }
+    100% {
+      background: linear-gradient(45deg, #fbc2eb, #8fd3f4);
+    }
+  }
+  
+  .container {
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin: 0;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    animation: fadeIn 4s ease-out;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: #ff6f61;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: bounce 2s infinite;
+  }
+  
+  .button:hover {
+    background: #ff9a9e;
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
